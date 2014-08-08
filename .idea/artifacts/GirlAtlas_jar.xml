@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="GirlAtlas:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/GirlAtlas_jar</output-path>
+    <output-path>$PROJECT_DIR$</output-path>
     <root id="archive" name="GirlAtlas.jar">
       <element id="module-output" name="GirlAtlas" />
       <element id="extracted-dir" path="D:/JAVA-lib/jsoup/jsoup-1.7.3.jar" path-in-jar="/" />
