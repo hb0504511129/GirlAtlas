@@ -9,18 +9,24 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        GirlAtlasService service=new GirlAtlasService();
-        service.login("lxy5266@live.com", "lxy506647253", "on");
-        List<String> urls=service.getAllPagesURL();
+        GirlAtlasService service = new GirlAtlasService();//实例化相册下载器
+        service.login("lxy5266@live.com", "lxy506647253", "on");//登陆
+        List<String> urls = service.getAllPagesURL();//获得所有相册页面地址
         for (String url : urls) {
-            List<PhotoAlbum> photoAlbums =service.getPhotoAlbums(url);
+            System.out.println("正在下载页面:"+url);
+            List<PhotoAlbum> photoAlbums = service.getPhotoAlbums(url);//获得当前页面的相册
             for (PhotoAlbum photoAlbum : photoAlbums) {
-                photoAlbum=service.getAPhotoAlbumImages(photoAlbum);
-                List<ImageAndFile> imageAndFiles= service.downloadImagesByPhotoAlbum(photoAlbum);
+                System.out.println("正在处理相册:"+photoAlbum);
+                photoAlbum = service.getAPhotoAlbumImages(photoAlbum);//加载相册的图片
+                List<ImageAndFile> imageAndFiles = service.downloadImagesByPhotoAlbum(photoAlbum);//整理下载连接及保存位置
                 for (ImageAndFile file : imageAndFiles) {
-                    service.downLoadImage(file);
+                    System.out.println("正在下载图片:"+file);
+                    service.downLoadImage(file);//下载图片
                 }
+                System.out.println();
             }
+            System.out.println();
+            System.out.println();
         }
     }
 }

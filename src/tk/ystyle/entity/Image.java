@@ -1,10 +1,17 @@
 package tk.ystyle.entity;
 
 /**
+ * 记录一张图片的信息
  * Created by 小奕 on 2014-08-08 13:21.
  */
 public class Image {
+    /**
+     * 图片下标
+     */
     private String index;
+    /**
+     * 图片地址
+     */
     private String url;
 
     public Image() {

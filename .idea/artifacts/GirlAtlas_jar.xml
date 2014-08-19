@@ -3,7 +3,7 @@
     <output-path>$PROJECT_DIR$</output-path>
     <root id="archive" name="GirlAtlas.jar">
       <element id="module-output" name="GirlAtlas" />
-      <element id="extracted-dir" path="D:/JAVA-lib/jsoup/jsoup-1.7.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/Java-lib/jsoup/jsoup-1.7.3.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

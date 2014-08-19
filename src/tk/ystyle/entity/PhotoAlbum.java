@@ -1,17 +1,35 @@
 package tk.ystyle.entity;
 
-import java.util.Date;
 import java.util.List;
 
 /**
+ * 相册信息
  * Created by 小奕 on 2014-08-08 13:21.
  */
 public class PhotoAlbum {
+    /**
+     * 标题
+     */
     private String title;
+    /**
+     * 相册地址
+     */
     private String url;
+    /**
+     * 相册封面图片地址
+     */
     private String mainImg;
+    /**
+     * 相册图片张数
+     */
     private String number;
+    /**
+     * 相册创建时间
+     */
     private String createTime;
+    /**
+     * 相册的图片信息
+     */
     private List<Image> images;
 
     public PhotoAlbum(String title, String url, String mainImg, String number, String createTime, List<Image> images) {
@@ -82,7 +100,6 @@ public class PhotoAlbum {
                 ", mainImg='" + mainImg + '\'' +
                 ", number='" + number + '\'' +
                 ", createTime='" + createTime + '\'' +
-                ", images=" + images +
                 '}';
     }
 }
