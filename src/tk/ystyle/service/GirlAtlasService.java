@@ -30,7 +30,7 @@ public class GirlAtlasService {
     }
 
     public Map<String, String> getCookies() {
-        return cookies.size() > 0 ? cookies : login("lxy5266@live.com", "lxy506647253", "on");
+        return cookies.size() > 0 ? cookies : login("lxy5266@live.com", "hhhhhhhhh", "on");
     }
 
     public void setCookies(Map<String, String> cookies) {
