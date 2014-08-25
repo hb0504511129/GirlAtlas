@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         GirlAtlasService service = new GirlAtlasService();//实例化相册下载器
-        service.login("lxy5266@live.com", "lxy506647253", "on");//登陆
+        service.login("lxy5266@live.com", "hhhhhhh", "on");//登陆
         List<String> urls = service.getAllPagesURL();//获得所有相册页面地址
         for (String url : urls) {
             System.out.println("正在下载页面:"+url);
